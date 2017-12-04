@@ -2,13 +2,14 @@
 	display: grid;
 	grid-template-columns: 1f 1f 1f;
 	grid-template-rows: 1f 1f 1f 1f 1f 1f 1f 1f	;
-  	margin-bottom: 5px;
-
+  margin-bottom: 5px;
 }
 
 .navbar {
     overflow: hidden;
     background-color: #333;
+    border: black solid;
+    text-shadow: 2px 2px black;
     position: fixed;
     top: 0;
     width: 100%;	
@@ -24,10 +25,9 @@
 }
 
 .main {
-	margin-top: 60px;
+  margin: 200px;
 	display: block;
-    position: relative;
-    text-align: center;	
+  text-align: center;	
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 1;
@@ -43,7 +43,8 @@
 
 .skills {
 	text-align: center;
-    border: black solid;	
+  background-color: black;
+  border: white solid;	
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 3;
@@ -80,46 +81,20 @@
 }
 
 
-.project1 {
+.project-image{
     display: block;
     margin: 0 auto;
-    position: relative;
     opacity: 0.5;
     transition: 0.3s ease;
     cursor: pointer;
+    border: solid 2px black;
+    border-radius: 50%;
 }
 
-.project1:hover {
-    transform: scale(2.5, 2.5); 
+.project-image:hover {
+    transform: scale(1.5, 1.5); 
     opacity: 1;
-}
-
-.project2 {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    opacity: 0.5;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.project2:hover {
-    transform: scale(2.5, 2.5); 
-    opacity: 1;
-}
-
-.project3 {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    opacity: 0.5;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.project3:hover {
-    transform: scale(2.5, 2.5); 
-    opacity: 1;
+    border-radius: 0%;
 }
 
 .background-top { 
@@ -158,39 +133,30 @@
 }
 
 body {
+  margin: 0;	
   height: 100%;
   font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 1.2rem;
   line-height: 1.45;
   display: flex;
   flex-wrap: wrap;
+  color: #f2f2f2;
+  text-shadow: 2px 2px black;
 }
 
 
 h1 {
 	text-align: center;
-	border: black solid;
+  color: #f2f2f2;
 
 }
 
 h2 {
 	text-align: center;
-	border: black solid;
 }
 
 h3 {
 	text-align: center;
-	border: black solid;	
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  padding: 3px;
-  margin-bottom: 5px;
-  list-style-type: none;
 }
 
 ul {
